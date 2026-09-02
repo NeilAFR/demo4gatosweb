@@ -1,0 +1,39 @@
+/* 1. Todos los @import al principio absoluto y juntos */
+@import "tailwindcss";
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@500;600;700;800;900&family=Work+Sans:wght@400;500;600&display=swap');
+
+/* 2. Tokens y variables de tema de Tailwind v4 */
+@theme {
+  --color-primary: #a93200;
+  --color-primary-fixed: #ffdbd0;
+  --color-primary-container: #d1430a;
+  --color-background: #fff8f6;
+  --color-surface: #fff8f6;
+  --color-surface-container-low: #fef1ec;
+  --color-surface-container-lowest: #ffffff;
+  --color-surface-variant: #ece0db;
+  --color-on-surface: #201a17;
+  --color-on-surface-variant: #5a4139;
+  --color-outline: #8e7067;
+  --color-outline-variant: #e2bfb4;
+
+  /* Paleta atmosférica para Escape Room */
+  --color-mystery-dark: #121013;
+  --color-mystery-card: #1c181c;
+  --color-mystery-border: #33272d;
+}
+
+/* 3. Reglas base globales */
+body {
+  background-color: var(--color-background);
+  color: var(--color-on-surface);
+  font-family: 'Work Sans', system-ui, -apple-system, sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4,
+.font-heading {
+  font-family: 'Plus Jakarta Sans', system-ui, -apple-system, sans-serif;
+}
