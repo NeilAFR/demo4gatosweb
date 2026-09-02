@@ -144,8 +144,8 @@ export const Navbar = ({ seccionActiva, setSeccionActiva, cantidadCarrito = 0 })
                                     key={link.id}
                                     onClick={() => irA(link.id)}
                                     className={`flex items-center justify-between py-2.5 px-4 rounded-2xl transition-all text-left cursor-pointer group ${estaActivo
-                                            ? 'bg-white text-[#A63813] font-bold shadow-md shadow-black/10'
-                                            : 'text-white/85 hover:text-white hover:bg-white/10'
+                                        ? 'bg-white text-[#A63813] font-bold shadow-md shadow-black/10'
+                                        : 'text-white/85 hover:text-white hover:bg-white/10'
                                         }`}
                                 >
                                     <span className="font-heading text-base tracking-wide">
@@ -174,40 +174,40 @@ export const Navbar = ({ seccionActiva, setSeccionActiva, cantidadCarrito = 0 })
                     </nav>
 
                     {/* Bloque inferior de atención y contacto */}
-                    <div className="bg-black/15 rounded-2xl p-4 border border-white/10 space-y-3 shrink-0 text-left">
+                    <div className="bg-white rounded-2xl p-4 shadow-lg shadow-black/10 border border-white/20 space-y-3 shrink-0 text-left">
                         <div className="flex items-start gap-2.5">
-                            <Clock size={16} className="text-white/70 shrink-0 mt-0.5" />
+                            <Clock size={16} className="text-[#A63813] shrink-0 mt-0.5" />
                             <div className="text-xs">
-                                <span className="text-white/60 block text-[10px] uppercase font-bold tracking-wider">Atención</span>
-                                <span className="text-white/95 font-medium">Todos los días: 3:00 PM – 10:00 PM</span>
+                                <span className="text-gray-400 block text-[10px] uppercase font-bold tracking-wider">Atención</span>
+                                <span className="text-[#201a17] font-semibold">Todos los días: 3:00 PM – 10:00 PM</span>
                             </div>
                         </div>
 
                         <div className="flex items-start gap-2.5">
-                            <MapPin size={16} className="text-white/70 shrink-0 mt-0.5" />
+                            <MapPin size={16} className="text-[#A63813] shrink-0 mt-0.5" />
                             <div className="text-xs">
-                                <span className="text-white/60 block text-[10px] uppercase font-bold tracking-wider">Dirección</span>
+                                <span className="text-gray-400 block text-[10px] uppercase font-bold tracking-wider">Dirección</span>
                                 <a
                                     href="https://maps.app.goo.gl/EEAsk5r9F3XCMGLaA"
                                     target="_blank"
                                     rel="noopener noreferrer"
-                                    className="text-white/95 font-medium underline underline-offset-2 hover:text-white"
+                                    className="text-[#201a17] font-semibold underline underline-offset-2 hover:text-[#A63813] transition-colors"
                                 >
                                     Jirón Clorinda Matto de Turner 205, Cusco
                                 </a>
                             </div>
                         </div>
 
-                        <div className="pt-2 border-t border-white/10 flex items-center justify-between">
-                            <span className="text-[11px] text-white/70">Instagram @4gatosperu</span>
+                        <div className="pt-2 border-t border-gray-100 flex items-center justify-between">
+                            <span className="text-[11px] text-gray-500 font-medium">Instagram @4gatosperu</span>
                             <a
                                 href="https://www.instagram.com/4gatosperu/"
                                 target="_blank"
                                 rel="noopener noreferrer"
-                                className="w-7 h-7 rounded-full bg-white/10 hover:bg-white text-white hover:text-[#A63813] flex items-center justify-center transition-all shadow-xs"
+                                className="w-8 h-8 rounded-full bg-[#A63813]/10 hover:bg-[#A63813] text-[#A63813] hover:text-white flex items-center justify-center transition-all shadow-xs"
                                 title="Instagram"
                             >
-                                <FaInstagram size={14} />
+                                <FaInstagram size={15} />
                             </a>
                         </div>
                     </div>
